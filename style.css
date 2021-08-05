@@ -106,3 +106,80 @@ button{
     position: relative;
 
   }
+  .about-div{
+      width: 55vw;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      padding: 30px 20px;
+      background: #1A1D1A;
+      border: 4px solid #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 10px;
+  }
+  .about-div article{
+      font-size: 1.1rem;
+      color: #fff;
+  }
+ span{
+   font-size: 1.3rem;
+   font-weight: bold;
+   font-style: italic;
+ }
+ span:hover{
+   background: #fff;
+   color: #1A1D1A;
+  
+ }
+
+ @media screen and (max-width: 600px) {
+   .navbar{
+     font-size: 14px;
+     letter-spacing: normal;
+     padding: 15px;
+     
+   }
+   button{
+    font-size: 0.8rem;
+    height: 2rem;
+    padding: 0.25rem 1rem;
+  }
+  .buttons{
+    justify-content:space-evenly
+    
+}  
+  .fas{
+    margin: 0 5px;
+  }
+  .main-button{
+    font-size: 28px;
+  }
+textarea{
+   width: 80vw;
+   height: 20vh;
+   font-size: 1rem;
+   padding: 1rem;
+   margin:1rem;
+}
+.output{
+    width: 80vw;
+    height: 20vh;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.container{
+  width: 100vw;;
+}
+
+
+  .about-div{
+    height: 498px;
+    width: 90vw;
+    padding: 12px 8px;
+    font-size: 10px ;
+  }
+ }

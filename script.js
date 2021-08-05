@@ -29,7 +29,7 @@ function pauseSong() {
   playBtn.setAttribute("title", "Play");
   music.pause();
 }
-
+music.addEventListener("ended", pauseSong());
 playBtn.addEventListener("click", () => (isPlaying ? pauseSong() : playSong()));
 
 const errorHandler = (error) =>{
@@ -40,7 +40,7 @@ const errorHandler = (error) =>{
 const resetHandler = () =>{
     userInput.value = ""
     output.innerText= ""
-    music.src = "";
+    music.src = ""
     pauseSong();
   }
 
@@ -67,8 +67,10 @@ const clickHandler = () =>{
 }
   
 btnTranslate.addEventListener("click", () => {
-    audioHandler();
-    clickHandler();
+  audioHandler();
+  clickHandler(); 
+  
+    
   });  
 reset.addEventListener("click",resetHandler);
 
