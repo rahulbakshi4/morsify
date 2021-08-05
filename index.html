@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Morsify | The Morse Code Convertor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
+        <nav class="navbar">
+            <ul>
+                <li><a href="#"> Morsify : The Morse Code Convertor</a></li>
+                <li><a href="about.html"> About </a></li>
+            </ul>
+        </nav>
+        <div class="container"> 
+            <textarea id="userinput" placeholder="Enter Your Text Here And Hit The Translate Button" cols="30" rows="10"></textarea><br>
+             <div class="buttons"> 
+            <button class="btn" id="btn-translate">Translate</button>
+            <button class="btn"id="btn-play">Play Audio</button>
+            <button class="btn"id="btn-reset">Reset</button>
+        </div>
+         <div class="output"></div>
+       </div> 
+        
+    <script src="script.js"></script>
 </body>
 </html>
