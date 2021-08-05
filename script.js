@@ -29,7 +29,6 @@ function pauseSong() {
   playBtn.setAttribute("title", "Play");
   music.pause();
 }
-music.addEventListener('ended',pauseSong())
 
 playBtn.addEventListener("click", () => (isPlaying ? pauseSong() : playSong()));
 
@@ -44,6 +43,7 @@ const resetHandler = () =>{
     music.src = "";
     pauseSong();
   }
+
 const audioHandler = () => {
     const textInput = userInput.value;
     fetch(getAudioUrl(textInput))
@@ -54,6 +54,7 @@ const audioHandler = () => {
       })
       .catch(errorHandler);
   };
+
 const clickHandler = () =>{
     const textInput = userInput.value
 
