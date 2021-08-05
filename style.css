@@ -136,7 +136,11 @@ button{
  }
 
  @media screen and (max-width: 600px) {
-   .navbar{
+  html,body{
+    overflow-y: hidden;
+  } 
+  
+  .navbar{
      font-size: 14px;
      letter-spacing: normal;
      padding: 15px;
