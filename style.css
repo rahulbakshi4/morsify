@@ -30,7 +30,7 @@ a {
 textarea{
     margin: 2rem;
    width: 50vw;
-   height: 25vh;
+   height: 20vh;
    resize: none;
    border-radius:10px;
    border: 2px solid #000;
@@ -40,7 +40,7 @@ textarea{
 }
 
 .container{
-width:90vw;
+width:100vw;
 height:100vh;
 display: flex;
 justify-content: center;
@@ -50,7 +50,8 @@ flex-direction: column;
 }
 .buttons{
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
+    padding: 0 8rem;
     
 }
 button{
@@ -71,12 +72,10 @@ button{
     transform: translate(0,0.2rem);
     box-shadow: 0 0.3rem rgba(225, 226, 228, 0.945);
   }
-  #btn-play{
-      margin: 0 2rem;
-  }
+  
 .output{
     border: 2px solid #000;
-    height: 20vh;
+    height: 15vh;
     margin: 3rem 2rem;
     padding: 2.8rem;
     width: 48vw;
@@ -89,23 +88,6 @@ button{
     font-size: 1.2rem;
   }
 
-  .fas {
-    font-size: 30px;
-    color: rgb(228, 218, 218);
-    opacity: 80%;
-    cursor: pointer;
-    user-select: none;
-    margin: 0 20px;
-  }
-  .fas:hover {
-    opacity: 100%;
-  }
-  
-  .main-button {
-    font-size: 40px;
-    position: relative;
-
-  }
   .about-div{
       width: 55vw;
       height: 50vh;
@@ -134,11 +116,27 @@ button{
    color: #1A1D1A;
   
  }
+ footer ul{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0 1rem;
+  margin: 1rem;
+}
+footer li{
+  padding: 0 .5rem;
+   font-size: 1.25rem;
+
+}
+footer a{
+  color:#E7E2E2; 
+}
 
  @media screen and (max-width: 600px) {
-  html,body{
+  /* html,body{
     overflow-y: hidden;
-  } 
+  }  */
   
   .navbar{
      font-size: 14px;
@@ -152,15 +150,10 @@ button{
     padding: 0.25rem 1rem;
   }
   .buttons{
-    justify-content:space-evenly
-    
+    justify-content:space-evenly;
+    padding: 0;
 }  
-  .fas{
-    margin: 0 5px;
-  }
-  .main-button{
-    font-size: 28px;
-  }
+
 textarea{
    width: 80vw;
    height: 20vh;
